@@ -1,0 +1,129 @@
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font-sans);color:var(--color-text-primary);background:var(--color-background-tertiary)}
+.hero{background:var(--color-background-primary);border-bottom:0.5px solid var(--color-border-tertiary);padding:3rem 2rem 2rem;text-align:center}
+.avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;object-position:top;margin:0 auto 1rem;display:block;border:2px solid var(--color-border-secondary)}
+.hero h1{font-size:26px;font-weight:500;margin-bottom:4px}
+.hero p{font-size:14px;color:var(--color-text-secondary);margin-bottom:1rem}
+.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:1rem}
+.badge{font-size:12px;padding:4px 12px;border-radius:20px;border:0.5px solid var(--color-border-tertiary);background:var(--color-background-secondary);color:var(--color-text-secondary)}
+.section{padding:2rem;max-width:860px;margin:0 auto}
+.section h2{font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-text-secondary);margin-bottom:1rem;padding-bottom:6px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;padding:1rem 1.25rem;margin-bottom:12px}
+.card-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:4px}
+.card-title{font-size:15px;font-weight:500}
+.card-sub{font-size:13px;color:var(--color-text-secondary);margin-top:2px}
+.card-date{font-size:12px;color:var(--color-text-tertiary);white-space:nowrap}
+.card-body{font-size:13px;color:var(--color-text-secondary);line-height:1.6;margin-top:10px}
+.card-body li{margin-bottom:4px;padding-left:12px;position:relative}
+.card-body li::before{content:"·";position:absolute;left:0}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:1.5rem}
+.metric{background:var(--color-background-secondary);border-radius:8px;padding:0.75rem 1rem;text-align:center}
+.metric-num{font-size:22px;font-weight:500;color:var(--color-text-primary)}
+.metric-label{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.skill-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:8px;padding:0.75rem 1rem}
+.skill-card h3{font-size:12px;font-weight:500;color:var(--color-text-secondary);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em}
+.skill-tags{display:flex;flex-wrap:wrap;gap:4px}
+.tag{font-size:12px;padding:2px 8px;border-radius:4px;background:var(--color-background-secondary);color:var(--color-text-primary)}
+.win-badge{display:inline-flex;align-items:center;gap:4px;font-size:12px;padding:3px 10px;border-radius:20px;margin:3px 3px 0 0}
+.win-gold{background:#FAEEDA;color:#633806}
+.win-blue{background:#E6F1FB;color:#0C447C}
+.win-green{background:#EAF3DE;color:#27500A}
+.contact-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:1.5rem 2rem 2rem}
+</style>
+
+<div class="hero">
+  <img class="avatar" src="/mnt/user-data/uploads/WhatsApp_Image_2024-09-14_at_12_46_44_PM.jpeg" alt="Harsh Sankhe" />
+  <h1>Harsh Sankhe</h1>
+  <p>Data Analyst · 3rd Year Engineering Student · Mumbai</p>
+  <div class="badges">
+    <span class="badge">Power BI</span>
+    <span class="badge">SQL</span>
+    <span class="badge">Python</span>
+    <span class="badge">Excel</span>
+    <span class="badge">Tableau</span>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Achievements</h2>
+  <div class="metrics">
+    <div class="metric"><div class="metric-num">12x</div><div class="metric-label">National Hackathon</div></div>
+    <div class="metric"><div class="metric-num">1x</div><div class="metric-label">International Hackathon</div></div>
+    <div class="metric"><div class="metric-num">10x</div><div class="metric-label">National Ideathon</div></div>
+    <div class="metric"><div class="metric-num">8.9</div><div class="metric-label">SGPI</div></div>
+  </div>
+
+  <h2>Experience</h2>
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">Data Analyst</div><div class="card-sub">Flyers Academy</div></div>
+      <span class="card-date">Jun 2025 – Present</span>
+    </div>
+    <div class="card-body">
+      <ul style="list-style:none">
+        <li>Built interactive Power BI dashboards for student performance, attendance & exam results</li>
+        <li>Automated Excel reporting with Power Query — saved 20+ hours/month</li>
+        <li>Analyzed admission data across State, CBSE, ICSE boards — boosted conversion by 25%</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">SmartEduPulse</div><div class="card-sub">Real-Time Academic & Admission Intelligence System</div></div>
+      <span class="card-date">Jun 2025</span>
+    </div>
+    <div class="card-body">Power BI · Python · Excel Power Query · SQL<br><br>Real-time education intelligence system tracking academic performance, admission trends, and parent engagement. Live lead scoring model improved admission conversion by 30%.</div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">Social Media Performance Dashboard</div></div>
+      <span class="card-date">Jan 2025</span>
+    </div>
+    <div class="card-body">Power BI · Excel<br><br>Tracked follower growth, post engagement and hashtag performance for Instagram & Twitter. Increased content engagement by 40%.</div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">MoodMap</div><div class="card-sub">Real-Time City Emotion Dashboard</div></div>
+      <span class="card-date">Dec 2024</span>
+    </div>
+    <div class="card-body">Python · NLP · Power BI<br><br>Live dashboard tracking city-wide emotions using Twitter, news, traffic & weather data. 85% accuracy, 12+ high-stress zones identified, 30% improvement in citizen engagement.</div>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><h3>Analytics</h3><div class="skill-tags"><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Excel</span><span class="tag">Power Query</span></div></div>
+    <div class="skill-card"><h3>Languages</h3><div class="skill-tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Java</span></div></div>
+    <div class="skill-card"><h3>Tools</h3><div class="skill-tags"><span class="tag">GitHub</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">WordPress</span></div></div>
+  </div>
+
+  <br>
+  <h2>Certifications & Wins</h2>
+  <div class="card">
+    <div class="card-body" style="margin-top:0">
+      <span class="win-badge win-gold">🏆 12x National Hackathon Winner</span>
+      <span class="win-badge win-blue">🌐 1x International Hackathon Winner</span>
+      <span class="win-badge win-green">💡 10x National Ideathon Winner</span>
+      <span class="win-badge win-gold">📄 International Research Paper – Healthcare</span>
+      <span class="win-badge win-blue">☁️ AWS Solutions Architecture (Forage)</span>
+      <span class="win-badge win-green">☕ NPTEL – Java Programming</span>
+    </div>
+  </div>
+
+  <h2>Education</h2>
+  <div class="card">
+    <div class="card-header">
+      <div><div class="card-title">B.E. – Rizvi College of Engineering, Bandra</div><div class="card-sub">3rd Year · SGPI 8.9</div></div>
+      <span class="card-date">Aug 2023 – Present</span>
+    </div>
+  </div>
+</div>
+
+<div class="contact-row">
+  <span style="font-size:13px;color:var(--color-text-secondary);padding:6px 0">harshrsankhe@gmail.com</span>
+  <span style="font-size:13px;color:var(--color-text-secondary);padding:6px 0">+91-8983029191</span>
+</div>
